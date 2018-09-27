@@ -1,7 +1,7 @@
 public class Cat extends Zoo {
 	private int age;
 	private String act;
-	public Cat(String name, String eat, String cry,int age) {
+	public Cat(String name, String eat, String cry,int ,String act) {
 		super(name, eat, cry);
 		this.age = age;
 		this.act = act;
