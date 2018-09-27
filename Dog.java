@@ -6,5 +6,8 @@ public class Dog extends Zoo{
 		this.age = age;
 	}
 
-
+	public void print() {
+		super.print();
+		System.out.println();
+	}
 }

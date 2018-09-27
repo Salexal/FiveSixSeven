@@ -1,7 +1,11 @@
 public class Fish extends Zoo{
-	private int age;
-	public Fish(String name, String eat, String cry,int age) {
+	private String color;
+	public Fish(String name, String eat, String cry,String color) {
 		super(name, eat, cry);
-		this.age = age;
+		this.color = color;
+	}
+	public void print() {
+		super.print();
+		System.out.println(" "+color);
 	}
 }

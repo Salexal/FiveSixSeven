@@ -5,7 +5,7 @@
 @time      D.M.Y
 */
 
-import java.awt.print.Printable;
+
 
 public class Zoo {
 
@@ -21,16 +21,16 @@ public class Zoo {
 	}
 	
 	public void print() {
-		System.out.println(name+": "+eat+" "+cry);
+		System.out.print(name+": "+eat+" "+cry);
 	}
 	public static void main(String[] args) {
 		Dog dog = new Dog("xiaogou", "¹ÇÍ·", "wang!wang!",3);
 		dog.print();
 		Cat cat = new Cat("xiaomao", "Óã", "ß÷£¡",5);
 		cat.print();
-		Fish fish = new Fish("xiaoyu", "Ë®Ôå", "à£à£à£!",2);
+		Fish fish = new Fish("xiaoyu", "Ë®Ôå", "à£à£à£!","blue");
 		fish.print();
-	    Rabiit rabiit = new Rabiit("xiaotu", "²Ý", "×ÔÐÐÄÔ²¹!",1);
+	    Rabiit rabiit = new Rabiit("xiaotu", "²Ý", "×ÔÐÐÄÔ²¹!","tiaotiaotiao");
 		rabiit.print();
 	}
 

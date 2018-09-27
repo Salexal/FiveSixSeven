@@ -4,4 +4,10 @@ public class Cat extends Zoo {
 		super(name, eat, cry);
 		this.age = age;
 	}
+	
+	
+	public void print() {
+		super.print();
+		System.out.println(" "+age);
+	}
 }
