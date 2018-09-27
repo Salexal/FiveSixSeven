@@ -24,13 +24,13 @@ public class Zoo {
 		System.out.print(name+": "+eat+" "+cry);
 	}
 	public static void main(String[] args) {
-		Dog dog = new Dog("xiaogou", "¹ÇÍ·", "wang!wang!",3);
+		Dog dog = new Dog("xiaogou", "ï¿½ï¿½Í·", "wang!wang!",3);
 		dog.print();
-		Cat cat = new Cat("xiaomao", "Óã", "ß÷£¡",5);
+		Cat cat = new Cat("xiaomao", "ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½",5,"cicici");
 		cat.print();
-		Fish fish = new Fish("xiaoyu", "Ë®Ôå", "à£à£à£!","blue");
+		Fish fish = new Fish("xiaoyu", "Ë®ï¿½ï¿½", "ï¿½ï¿½ï¿½!","blue");
 		fish.print();
-	    Rabiit rabiit = new Rabiit("xiaotu", "²Ý", "×ÔÐÐÄÔ²¹!","tiaotiaotiao");
+	    Rabiit rabiit = new Rabiit("xiaotu", "ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½!","tiaotiaotiao");
 		rabiit.print();
 	}
 
