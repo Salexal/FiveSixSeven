@@ -6,6 +6,6 @@ public class Fish extends Zoo{
 	}
 	public void print() {
 		super.print();
-		System.out.println(" "+color);
+		System.out.println("  "+color);
 	}
 }
