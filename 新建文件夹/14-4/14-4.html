@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>伸缩式导航菜单</title>
+    <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+        dl {
+            width: 158px;
+            margin: 0px;
+        }
+        
+        dt {
+            font-size: 14px;
+            padding: 0px;
+            margin: 0px;
+            width: 146px;
+            /*设置宽度*/
+            height: 19px;
+            /*设置高度*/
+            background-image: url(images/title_show.gif);
+            /*设置背景图片*/
+            padding: 6px 0px 0px 12px;
+            color: #215dc6;
+            font-size: 12px;
+            cursor: hand;
+        }
+        
+        dd {
+            color: #000;
+            font-size: 12px;
+            margin: 0px;
+        }
+        
+        a {
+            text-decoration: none;
+            /*不显示下划线*/
+        }
+        
+        a:hover {
+            color: #FF6600;
+        }
+        
+        #top {
+            width: 158px;
+            /*设置宽度*/
+            height: 30px;
+            /*设置高度*/
+            background-image: url(images/top.gif);
+            /*设置背景图片*/
+        }
+        
+        #bottom {
+            width: 158px;
+            /*设置宽度*/
+            height: 31px;
+            /*设置高度*/
+            background-image: url(images/bottom.gif);
+            /*设置背景图片*/
+        }
+        
+        .title {
+            background-image: url(images/title_quit.gif);
+            /*设置背景图片*/
+        }
+        
+        .item {
+            width: 146px;
+            /*设置宽度*/
+            height: 15px;
+            /*设置高度*/
+            background-image: url(images/item_bg.gif);
+            /*设置背景图片*/
+            padding: 6px 0px 0px 12px;
+            color: #215dc6;
+            font-size: 12px;
+            cursor: hand;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("dd").hide();
+            $("dt[class!='title']").toggle(function() {
+                $(this).css("backgroundImage", "url(title_hide.gif)");
+                $(this).next().slideDown("slow");
+            }, function() {
+                $(this).css("backgroundImage", "url(title_show.gif)");
+                $(this).next().slideUp("slow");
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="top"></div>
+    <dl>
+        <dt>员工管理</dt>
+        <dd>
+            <div class="item">添加员工信息</div>
+            <div class="item">管理员工信息</div>
+        </dd>
+        <dt>招聘管理</dt>
+        <dd>
+            <div class="item">浏览应聘信息</div>
+            <div class="item">添加应聘信息</div>
+            <div class="item">浏览人才库</div>
+        </dd>
+        <dt>薪酬管理</dt>
+        <dd>
+            <div class="item">薪酬登记</div>
+            <div class="item">薪酬调整</div>
+            <div class="item">薪酬查询</div>
+        </dd>
+        <dt class="title"><a href="#">退出系统</a></dt>
+    </dl>
+    <div id="bottom"></div>
+</body>
+
+</html>

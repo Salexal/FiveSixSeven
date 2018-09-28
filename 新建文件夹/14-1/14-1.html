@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>自动隐藏式菜单</title>
+    <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#box").hover(function() {
+                $("#menu").show("slow");
+            }, function() {
+                $("#menu").hide("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        ul {
+            font-size: 12px;
+            list-style: none;
+            /*不显示项目符号*/
+            margin: 0px;
+            /*设置外边距*/
+            padding: 0px;
+            /*设置内边距*/
+        }
+        
+        li {
+            padding: 7px;
+            /*设置内边距*/
+        }
+        
+        a {
+            color: #000;
+            /*设置文字的颜色*/
+            text-decoration: none;
+            /*不显示下划线*/
+        }
+        
+        a:hover {
+            color: #F90;
+            /*设置文字的颜色*/
+        }
+        
+        #menu {
+            float: left;
+            /*浮动在左侧*/
+            text-align: center;
+            /*文字水平居中显示*/
+            width: 70px;
+            /*设置宽度*/
+            height: 295px;
+            /*设置高度*/
+            padding-top: 5px;
+            /*设置顶内边距*/
+            display: none;
+            /*显示状态为不显示*/
+            background-image: url(images/menu_bg.gif);
+            /*设置背景图片*/
+        }
+    </style>
+</head>
+
+<body>
+    <span id="box">
+<img  src="images/title.gif" width="30" height="80" id="flag" />
+<div id="menu">
+<ul>
+	<li><a href="#">图书介绍</a></li>
+    <li><a href="#">新书预告</a></li>
+    <li><a href="#">图书销售</a></li>
+    <li><a href="#">勘误发布</a></li>
+    <li><a href="#">资料下载</a></li>
+    <li><a href="#">好书推荐</a></li>
+    <li><a href="#">技术支持</a></li>
+    <li><a href="#">联系我们</a></li>
+</ul>
+</div>
+</span>
+</body>
+
+</html>
